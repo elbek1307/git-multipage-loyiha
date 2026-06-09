@@ -2,6 +2,9 @@ import React from 'react';
 import './HomeReadOur.css';
 import { MdArrowForward } from 'react-icons/md';
 
+import readour1 from "./readour1.png"
+import readour2 from "./readour2.png"
+
 const HomeReadOur = () => {
   return (
     <section className="read_our">
@@ -15,7 +18,7 @@ const HomeReadOur = () => {
         <div className="blog_cards">
           
           <div className="blog_card">
-            <div className="blog_img_placeholder">Img 1</div>
+            <img src={readour1} alt="rasm1" className="blog_img_placeholder" />
             <div className="blog_content">
               <span className="blog_date">Jan 19, 2021</span>
               <h4 className="blog_title">Today's best design trends for digital products</h4>
@@ -24,7 +27,7 @@ const HomeReadOur = () => {
           </div>
 
           <div className="blog_card">
-            <div className="blog_img_placeholder">Img 2</div>
+            <img src={readour2} alt="" className="blog_img_placeholder" />
             <div className="blog_content">
               <span className="blog_date">Jan 19, 2021</span>
               <h4 className="blog_title">A practical guide to building a brand strategy</h4>

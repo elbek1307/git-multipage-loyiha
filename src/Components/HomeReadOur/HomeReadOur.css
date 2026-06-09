@@ -23,9 +23,7 @@
 }
 .blog_img_placeholder {
   width: 250px;
-  background-color: #ccc; /* Rasmni shu yerga qoyasiz */
-  display: flex; align-items: center; justify-content: center;
-  color: #fff;
+  height: 245px;
 }
 .blog_content {
   padding: 40px 30px;
