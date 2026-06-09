@@ -1,0 +1,79 @@
+.footer_top {
+  padding: 100px 0 50px 0;
+  background-color: #f9fbfb;
+}
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  margin-bottom: 50px;
+}
+.footer_left {
+  flex: 1;
+  max-width: 400px;
+}
+.footer_logo_decor {
+  display: flex; margin-bottom: 20px;
+}
+.decor_box { width: 16px; height: 16px; }
+.decor_box.orange { background-color: #ff9d00; }
+.decor_box.yellow { background-color: #ffd05b; }
+
+.footer_title { font-size: 36px; font-weight: 700; line-height: 1.2; margin-bottom: 30px;}
+.footer_lets_talk { font-size: 20px; font-weight: 600; margin-bottom: 15px;}
+.footer_contact_info { font-size: 16px; line-height: 1.6; margin-bottom: 20px; color: #1b1c2b;}
+.footer_line { border: none; border-top: 1px solid #ccc; margin-bottom: 20px; }
+.footer_address { font-size: 14px; opacity: 0.7; line-height: 1.6;}
+
+/* Menyu qismi */
+.footer_right {
+  flex: 2;
+  display: flex;
+  justify-content: flex-end;
+  gap: 80px;
+}
+.footer_links_col {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer_links_col h4 {
+  font-size: 18px; font-weight: 700; margin-bottom: 10px;
+}
+.footer_links_col a {
+  text-decoration: none;
+  color: #1b1c2b;
+  opacity: 0.7;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+.footer_links_col a:hover {
+  opacity: 1;
+  color: #444cfc;
+  transform: translateX(5px);
+}
+
+.contact_us_wrap {
+  display: flex; justify-content: flex-end;
+}
+.contact_us_btn {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-weight: 600; color: #1b1c2b; text-decoration: none;
+  position: relative; padding-left: 20px; transition: gap 0.3s ease;
+}
+.contact_us_btn:hover { gap: 15px; }
+/* Tugma orqasidagi chiziq dekoratsiyasi */
+.contact_us_btn::before {
+  content: ''; position: absolute; left: 0; bottom: 5px;
+  width: 40px; height: 8px;
+  background: linear-gradient(to right, #ffd05b 50%, #444cfc 50%);
+  z-index: -1; opacity: 0.5;
+}
+
+@media (max-width: 992px) {
+  .footer_container { flex-direction: column; }
+  .footer_right { justify-content: space-between; gap: 30px; flex-wrap: wrap;}
+}
+@media (max-width: 576px) {
+  .footer_links_col { width: 100%; }
+}
