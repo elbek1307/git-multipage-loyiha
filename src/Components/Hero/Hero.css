@@ -1,0 +1,128 @@
+.hero {
+  color: #ffffff;
+  padding: 80px 0 60px 0;
+  background-color: #232536;
+}
+
+.hero_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero_content {
+  width: 40%;
+}
+
+.hero_title {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.hero_desc {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ffffff;
+  opacity: 0.7; 
+  margin-bottom: 32px;
+}
+
+.hero_btn {
+  background-color: #444cfc; 
+  color: #ffffff;
+  border: none;
+  padding: 16px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: background 0.3s ease;
+}
+
+.hero_btn:hover {
+  background-color: #3139da;
+}
+
+
+.hero_img {
+  width: 40%;
+  max-width: 550px;
+  height: 600px;
+  object-fit: cover;
+}
+
+/* Logos liniyasi */
+.hero_clients {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.clients_text span {
+  font-size: 14px;
+  opacity: 0.6;
+  display: block;
+}
+
+.clients_text h3 {
+  font-size: 18px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.clients_logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  opacity: 0.5; /* Logolarni xira qilish uchun */
+}
+
+.logo_item {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* Mobil va planshet uchun moslashuvchanlik (Responsive) */
+@media (max-width: 992px) {
+  .hero_wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero_content {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero_title {
+    font-size: 38px;
+  }
+
+  .hero_img_box {
+    justify-content: center;
+  }
+
+  .hero_clients {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .clients_logos {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+}

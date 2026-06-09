@@ -1,16 +1,31 @@
-import React from 'react'
-import "./App.css"
-import Navbar from './Components/Navbar/Navbar'
-import { Footer } from './Components/Footer/Footer'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import React from 'react';
+import "./App.css";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
+
+import { Layout } from './Components/layout/layout'; 
+import Home from './Pages/HomePages/Home';
+import Service from './Pages/ServicePages/Service'; 
+import Company from './Pages/CompanyPages/Company';
 
 
 const App = () => {
   return (
-   <>
-    
-   </>
-  )
+    <>
+      <BrowserRouter>
+        <Routes>
+          
+          <Route path="/" element={<Layout />}>
+            <Route path='home' index element={<Home />} /> 
+            <Route path="service" element={<Service />} />
+            <Route path="company" element={<Company />} />
+  
+          </Route>
+
+        </Routes>
+      </BrowserRouter>
+    </>
+  );
 }
 
-export default App
+export default App;
