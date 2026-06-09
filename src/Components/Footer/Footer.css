@@ -1,0 +1,39 @@
+footer{
+    background-color: #FFE6D2;
+}
+
+footer .container{
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fut_content{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.fut_content span{
+    margin-top: 7px;
+}
+
+.fut_box{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.fut_icon{
+    width: 20px;
+    height: 20px;
+}
+
+.fut_fac:hover ,.fut_lin:hover , .fut_twit:hover{
+    color: blue;
+}
+
+.fut_ins:hover{
+    color: red;
+}
