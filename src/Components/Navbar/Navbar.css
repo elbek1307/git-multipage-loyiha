@@ -4,6 +4,7 @@
 nav {
   padding: 20px 0;
   position: relative;
+  border-bottom: solid 1px #FFFFFF0D;
 }
 
 nav .container {
