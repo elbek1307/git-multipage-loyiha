@@ -6,6 +6,7 @@ import OurExpertise from '../../Components/OurExpertise/OurExpertise';
 import HomeOurServices from '../../Components/HomeOurServices/HomeOurServices';
 import OurProcess from '../../Components/OurProcess/OurProcess';
 import HomeOurCustomers from '../../Components/HomeOurCustomers/HomeOurCustomers';
+import HomeReadOur from '../../Components/HomeReadOur/HomeReadOur';
 
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
     <HomeOurServices />
     <OurProcess />
     <HomeOurCustomers />
+    <HomeReadOur />
   </>
   );
 };
