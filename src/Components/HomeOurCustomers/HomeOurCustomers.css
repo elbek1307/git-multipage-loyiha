@@ -1,0 +1,130 @@
+.our_customers {
+  padding: 100px 0;
+  background-color: #f9fbfb;
+}
+.customers_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+.customers_left {
+  flex: 1;
+  max-width: 500px;
+}
+.blue_square {
+  width: 16px;
+  height: 16px;
+  background-color: #444cfc;
+  margin-bottom: 20px;
+}
+.customers_left .section_title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+.customers_subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.customers_desc {
+  font-size: 16px;
+  opacity: 0.7;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+.customers_avatars_wrap {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.avatars_group {
+  display: flex;
+}
+.avatar_img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ccc;
+  border: 2px solid #fff;
+  margin-left: -15px;
+}
+.avatar_img:first-child { margin-left: 0; }
+.reviews_text {
+  font-size: 14px;
+}
+
+/* Karta */
+.customers_right {
+  flex: 1;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testimonial_card {
+  background-color: #fff;
+  padding: 40px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+  position: relative;
+  transition: transform 0.3s ease;
+}
+.testimonial_card:hover {
+  transform: translateY(-5px);
+}
+/* Karta chap tomonidagi rangli chiziq */
+.testimonial_card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 6px; height: 100%;
+  background: linear-gradient(to bottom, #ff9d00 50%, #444cfc 50%);
+}
+.quote_icon {
+  position: absolute;
+  top: -30px; right: 20px;
+  font-size: 60px;
+  color: #1b1c2b;
+}
+.testimonial_text {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+.testimonial_author {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.author_info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.author_avatar {
+  width: 50px; height: 50px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+.author_name { font-size: 16px; font-weight: 700; margin-bottom: 5px;}
+.author_role { font-size: 14px; opacity: 0.7;}
+.author_company_logo { font-weight: 700; color: #ccc; font-size: 20px;}
+
+.pagination_dots {
+  display: flex; gap: 8px; margin-top: 30px;
+}
+.dot {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+}
+.dot.active { background-color: #1b1c2b; }
+
+@media (max-width: 992px) {
+  .customers_container { flex-direction: column; }
+  .customers_left, .customers_right { max-width: 100%; }
+}

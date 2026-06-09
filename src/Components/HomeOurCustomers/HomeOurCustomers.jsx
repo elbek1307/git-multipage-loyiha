@@ -1,8 +1,11 @@
 import React from 'react';
 import './HomeOurCustomers.css';
 import { RiDoubleQuotesR } from 'react-icons/ri';
-// Rasmlarni o'zingizning assets papkangizdan chaqiring
-// import User1 from '../../assets/user1.png'; 
+
+import Avatar from "./homeAvatar.svg"
+import Avatar2 from "./homeAvatar2.svg"
+import Avatar3 from "./homeAvatar3.svg"
+
 
 const HomeOurCustomers = () => {
   return (
@@ -21,9 +24,9 @@ const HomeOurCustomers = () => {
           <div className="customers_avatars_wrap">
             <div className="avatars_group">
               {/* Vaqtincha rasm o'rniga divlar, o'zingiz img ga almashtirasiz */}
-              <div className="avatar_img"></div>
-              <div className="avatar_img"></div>
-              <div className="avatar_img"></div>
+              <img src={Avatar} alt="avatar1" />
+              <img src={Avatar2} alt="avatar2" />
+              <img src={Avatar3} alt="avatar3" />
             </div>
             <span className="reviews_text"><strong>30+</strong> Customer Reviews</span>
           </div>
@@ -38,7 +41,7 @@ const HomeOurCustomers = () => {
             </h3>
             <div className="testimonial_author">
               <div className="author_info">
-                <div className="author_avatar"></div>
+               <img src={Avatar} alt=""className="author_avatar" />
                 <div>
                   <h5 className="author_name">Johnny Andro</h5>
                   <span className="author_role">Director, Company</span>
