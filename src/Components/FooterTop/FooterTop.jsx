@@ -8,7 +8,7 @@ const FooterTop = () => {
     <footer className="footer_top">
       <div className="container footer_container">
         
-        {/* Chap qism */}
+     
         <div className="footer_left">
           <div className="footer_logo_decor">
             <div className="decor_box orange"></div>
@@ -27,7 +27,6 @@ const FooterTop = () => {
           </p>
         </div>
 
-        {/* O'ng qism - Menyular */}
         <div className="footer_right">
           <div className="footer_links_col">
             <Link to='home'>Home</Link >
