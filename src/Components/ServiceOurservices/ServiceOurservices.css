@@ -1,0 +1,194 @@
+.ser_ourservice {
+  padding: 100px 0;
+  background-color: #ffe6d2; /* Figmadagi och shaftoli rang */
+  color: #1b1c2b;
+  overflow: hidden;
+}
+
+/* Aynan siz aytgan asosiy ichki quti */
+.ser_ourservice_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+}
+
+/* Chap tomon elementlari */
+.ser_ourservice_left {
+  flex: 1;
+  max-width: 600px;
+}
+
+.ser_ourservice_subtitle {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  opacity: 0.6;
+  display: block;
+  letter-spacing: 1px;
+}
+
+.ser_ourservice_title {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 15px 0 25px 0;
+}
+
+.ser_ourservice_desc {
+  font-size: 16px;
+  line-height: 1.6;
+  opacity: 0.8;
+  margin-bottom: 40px;
+}
+
+/* Tugma va uning hover effekti */
+.ser_ourservice_btn {
+  background-color: #444cfc;
+  color: #ffffff;
+  border: none;
+  padding: 18px 36px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.ser_ourservice_btn::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(135deg, #ff9d00 50%, #ffd05b 50%);
+  z-index: 1;
+}
+
+.ser_ourservice_btn:hover {
+  background-color: #3139da;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(68, 76, 252, 0.2);
+}
+
+.ser_ourservice_btn_icon {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.ser_ourservice_btn:hover .ser_ourservice_btn_icon {
+  transform: translateX(5px);
+}
+
+/* O'ng tomon elementlari (Ro'yxat) */
+.ser_ourservice_right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.ser_ourservice_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  max-width: 450px;
+}
+
+.ser_ourservice_item {
+  width: 100%;
+}
+
+.ser_ourservice_link {
+  text-decoration: none;
+  color: #1b1c2b;
+  font-size: 28px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+  padding: 5px 0;
+  opacity: 0.8;
+}
+
+.ser_ourservice_arrow {
+  font-size: 28px;
+  color: #1b1c2b;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 0.3s ease;
+}
+
+/* Ro'yxat elementlari ustiga borgandagi hover */
+.ser_ourservice_link:hover {
+  opacity: 1;
+  padding-left: 5px;
+}
+
+.ser_ourservice_link:hover .ser_ourservice_arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ===================================================
+   RESPONSIV (Planshet va Mobil telefonlar uchun)
+   =================================================== */
+
+@media (max-width: 1024px) {
+  .ser_ourservice_content {
+    gap: 40px;
+  }
+  
+  .ser_ourservice_title {
+    font-size: 36px;
+  }
+
+  .ser_ourservice_link {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 992px) {
+  .ser_ourservice_content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+  }
+
+  .ser_ourservice_left,
+  .ser_ourservice_right {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .ser_ourservice {
+    padding: 60px 0;
+  }
+
+  .ser_ourservice_title {
+    font-size: 28px;
+  }
+
+  .ser_ourservice_link {
+    font-size: 20px;
+  }
+  
+  .ser_ourservice_arrow {
+    font-size: 22px;
+  }
+  
+  .ser_ourservice_btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
