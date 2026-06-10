@@ -1,22 +1,20 @@
 .ser_ourservice {
   padding: 100px 0;
-  background-color: #ffe6d2; /* Figmadagi och shaftoli rang */
+  background-color: #ffe6d2; /* Och shaftoli rang fon */
   color: #1b1c2b;
   overflow: hidden;
 }
 
-/* Aynan siz aytgan asosiy ichki quti */
-.ser_ourservice_content {
+/* Kodingiz uslubidagi asosiy container boshqaruvi */
+.ser_ourservice .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 80px;
 }
 
-/* Chap tomon elementlari */
+/* Chap tomon */
 .ser_ourservice_left {
-  flex: 1;
-  max-width: 600px;
+  width: 50%;
 }
 
 .ser_ourservice_subtitle {
@@ -42,7 +40,7 @@
   margin-bottom: 40px;
 }
 
-/* Tugma va uning hover effekti */
+/* Tugma va hover */
 .ser_ourservice_btn {
   background-color: #444cfc;
   color: #ffffff;
@@ -84,12 +82,9 @@
   transform: translateX(5px);
 }
 
-/* O'ng tomon elementlari (Ro'yxat) */
+/* O'ng tomon */
 .ser_ourservice_right {
-    wid
-  flex: 1;
-  display: flex;
-  justify-content: flex-start;
+  width: 40%;
 }
 
 .ser_ourservice_list {
@@ -100,7 +95,6 @@
   flex-direction: column;
   gap: 24px;
   width: 100%;
-  max-width: 450px;
 }
 
 .ser_ourservice_item {
@@ -128,7 +122,7 @@
   transition: all 0.3s ease;
 }
 
-/* Ro'yxat elementlari ustiga borgandagi hover */
+/* Hover effekti */
 .ser_ourservice_link:hover {
   opacity: 1;
   padding-left: 5px;
@@ -139,12 +133,11 @@
   transform: translateX(0);
 }
 
+/* ===================================================
+   RESPONSIV (Tablet va Telefonlar uchun)
+   =================================================== */
 
 @media (max-width: 1024px) {
-  .ser_ourservice_content {
-    gap: 40px;
-  }
-  
   .ser_ourservice_title {
     font-size: 36px;
   }
@@ -155,7 +148,7 @@
 }
 
 @media (max-width: 992px) {
-  .ser_ourservice_content {
+  .ser_ourservice .container {
     flex-direction: column;
     align-items: flex-start;
     gap: 50px;
@@ -163,7 +156,6 @@
 
   .ser_ourservice_left,
   .ser_ourservice_right {
-    max-width: 100%;
     width: 100%;
   }
 }
