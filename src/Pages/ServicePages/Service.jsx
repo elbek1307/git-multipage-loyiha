@@ -1,11 +1,12 @@
-// src/Pages/ServicePages/Service.jsx
+
 import React from 'react';
+import ServiceOurservices from '../../Components/ServiceOurservices/ServiceOurservices';
 
 const Service = () => {
   return (
-    <div>
-      <h1>Xizmatlar sahifasi!</h1>
-    </div>
+    <>
+    <ServiceOurservices />
+    </>
   );
 };
 

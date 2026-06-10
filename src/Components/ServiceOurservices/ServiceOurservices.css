@@ -86,6 +86,7 @@
 
 /* O'ng tomon elementlari (Ro'yxat) */
 .ser_ourservice_right {
+    wid
   flex: 1;
   display: flex;
   justify-content: flex-start;
@@ -138,9 +139,6 @@
   transform: translateX(0);
 }
 
-/* ===================================================
-   RESPONSIV (Planshet va Mobil telefonlar uchun)
-   =================================================== */
 
 @media (max-width: 1024px) {
   .ser_ourservice_content {
