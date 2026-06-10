@@ -23,7 +23,7 @@
 }
 
 .process_card {
-  border: 1px solid rgba(0,0,0,0.08); /* Chekkasidagi yupqa chiziq */
+  border: 1px solid rgba(0,0,0,0.08); 
   padding: 30px;
   position: relative;
   display: flex;
@@ -34,7 +34,7 @@
   cursor: pointer;
 }
 
-/* Katta kulrang raqam burchakda */
+
 .p_number {
   position: absolute;
   top: 20px;
@@ -56,7 +56,7 @@
 
 .p_text {
   flex: 1;
-  padding-right: 20px; /* Raqamga tegib qolmasligi uchun */
+  padding-right: 20px; 
 }
 
 .p_title {
@@ -72,14 +72,14 @@
   margin: 0;
 }
 
-/* Hover effekti - ko'tarilish va soya */
+
 .process_card:hover {
   transform: translateY(-8px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.05);
-  border-color: transparent; /* Hoverda border yo'qoladi */
+  border-color: transparent; 
 }
 
-/* Hover bo'lganda paydo bo'ladigan pastki chiziq */
+
 .process_card::after {
   content: '';
   position: absolute;
@@ -96,12 +96,12 @@
   opacity: 1;
 }
 
-/* Hover bo'lganda ikonka rangi o'zgarishi (ixtiyoriy) */
+
 .process_card:hover .p_icon {
   color: #444cfc; 
 }
 
-/* ================= RESPONSIVE ================= */
+
 @media (max-width: 992px) {
   .process_grid {
     grid-template-columns: repeat(2, 1fr);

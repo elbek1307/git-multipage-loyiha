@@ -4,7 +4,7 @@
   color: #1b1c2b;
 }
 
-/* Header */
+
 .about_header {
   display: flex;
   justify-content: space-between;
@@ -35,7 +35,7 @@
 .section_small_title {
   font-size: 24px;
   font-weight: 700;
-  margin-top: 30px; /* To align roughly with title start */
+  margin-top: 30px; 
   margin-bottom: 20px;
 }
 
@@ -113,9 +113,7 @@
   white-space: nowrap;
 }
 
-/* =========================================
-   RESPONSIV
-   ========================================= */
+
 
 @media (max-width: 992px) {
   .about_header {

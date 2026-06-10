@@ -19,7 +19,7 @@ export default function Navbar() {
         <div className="container">
           <img src={Logo} alt="Logo" className="nav_logo" />
           
-          {/* Burger bosilganda 'active' classi qo'shiladi */}
+        
           <ul className={`nav_list ${modal ? 'active' : ''}`}>
             <li className="nav_item"><Link to="home">Home</Link></li>
             <li className="nav_item"><Link to="service">Service</Link></li>

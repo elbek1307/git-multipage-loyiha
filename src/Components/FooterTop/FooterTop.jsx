@@ -1,6 +1,7 @@
 import React from 'react';
 import './FooterTop.css';
 import { MdArrowForward } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 
 const FooterTop = () => {
   return (
@@ -29,9 +30,9 @@ const FooterTop = () => {
         {/* O'ng qism - Menyular */}
         <div className="footer_right">
           <div className="footer_links_col">
-            <a href="#">Home</a>
-            <a href="#">Service</a>
-            <a href="#">Company</a>
+            <Link to='home'>Home</Link >
+            <Link to="service">Service</Link>
+            <Link to="company">Compnay</Link >
             <a href="#">Career</a>
             <a href="#">News</a>
           </div>

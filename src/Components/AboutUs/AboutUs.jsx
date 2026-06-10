@@ -1,6 +1,6 @@
 import React from 'react';
 import './AboutUs.css';
-import AboutImg1 from './about-1.png'; // Rasmlarni o'zingiznikiga qarab moslang
+import AboutImg1 from './about-1.png'; 
 import AboutImg2 from './about-2.png';
 import AboutImg3 from './about-3.png';
 
@@ -9,7 +9,7 @@ const AboutUs = () => {
     <section className="about_us">
       <div className="container">
         
-        {/* Sarlavhalar bloki */}
+ 
         <div className="about_header">
           <div className="about_header_left">
             <span className="section_subtitle">ABOUT US</span>

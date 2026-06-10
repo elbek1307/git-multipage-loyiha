@@ -48,7 +48,7 @@ const OurExpertise = () => {
             </div>
           </div>
 
-          {/* Card 3 */}
+        
           <div className="expertise_card_item">
             <div className="card_icon_box">
               <MdHeadsetMic className="card_icon" />
