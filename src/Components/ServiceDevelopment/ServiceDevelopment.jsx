@@ -1,13 +1,13 @@
 import React from 'react'
 import "./ServiceDevelopment.css"
-import devImg from "./dev_img.png" // O'zingizning rasmingizni qo'yasiz
+import devImg from "./dev_img.png" 
 
 export const ServiceDevelopment = () => {
   return (
    <>
    <section className="ser_development">
     <div className="container">
-        {/* Rasm chapda bo'lgani uchun birinchi yoziladi */}
+       
         <img src={devImg} alt="Development" className="ser_development_img" />
         
         <div className="ser_development_content">
