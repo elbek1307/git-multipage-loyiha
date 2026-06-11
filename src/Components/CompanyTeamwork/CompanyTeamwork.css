@@ -4,7 +4,7 @@
   background-color: #ffffff;
 }
 
-/* Matn qismi */
+/* Matn qismi - Toza va width bilan cheklangan */
 .com_team_content {
   width: 60%;
   margin-bottom: 50px;
@@ -36,11 +36,11 @@
   line-height: 1.6;
 }
 
-/* Jamoa rasmlari paneli (Container ichida turishi kerak) */
+
 .com_team_grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  width: 100%;
+  width: 100%; 
 }
 
 .com_team_member {
@@ -53,25 +53,26 @@
 .com_team_img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Rasm qutiga moslashadi, cho'zilib ketmaydi */
-  display: block; /* Rasm tagidagi bo'sh joyni yo'qotadi */
+  object-fit: cover; 
+  display: block; 
 }
 
-/* Hover qutisi */
+/* Hover overlay */
 .com_team_overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(35, 37, 54, 0.85); /* Shaffof qora rang */
+  background-color: rgba(35, 37, 54, 0.85); 
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   padding: 30px;
-  opacity: 0;
+  opacity: 0; 
   transition: opacity 0.4s ease;
 }
+
 
 .com_team_member:hover .com_team_overlay {
   opacity: 1;
@@ -91,7 +92,7 @@
   margin-bottom: 20px;
 }
 
-/* Ijtimoiy tarmoqlar */
+
 .com_team_socials {
   display: flex;
   gap: 15px;
@@ -103,11 +104,12 @@
   transition: color 0.3s ease;
 }
 
+
 .com_team_socials a:hover {
   color: var(--main-color);
 }
 
-/* Eng pastdagi rangli chiziq */
+/* Rasmlar tegidan o'tadigan rangli dekorativ chiziq */
 .com_team_bottom_line {
   width: 100%;
   height: 8px;
