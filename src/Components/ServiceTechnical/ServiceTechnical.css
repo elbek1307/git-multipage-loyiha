@@ -1,0 +1,68 @@
+.ser_technical{
+    width: 100%;
+}
+
+.ser_technical .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ser_technical_content{
+    width: 47%;
+}
+
+.ser_technical_subtitle{
+    display: block;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--subtitle-color);
+}
+
+.ser_technical_title{
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin: 30px 0;
+}
+
+.ser_technical_text{
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.ser_technical_img{
+    width: 40%;
+    height: 540px;
+}
+
+@media (max-width: 1000px) {
+
+    .ser_technical_img{
+        height: 450px;
+    }
+}
+
+@media (max-width: 800px) {
+    .ser_technical .container{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .ser_technical_content{
+        width: 100%;
+    }
+    
+    .ser_technical_img{
+        width: 100%;
+        height: 350px;
+    }
+
+    .ser_technical_subtitle{
+        font-size: 20px;
+    }
+
+    .ser_technical_title{
+        font-size: 32px;
+    }
+}
