@@ -1,0 +1,145 @@
+.com_team {
+  width: 100%;
+  padding: 80px 0 0 0;
+  background-color: #ffffff;
+}
+
+.com_team_content {
+  width: 60%;
+  margin-bottom: 50px;
+}
+
+.com_team_subtitle {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: var(--subtitle-color);
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.com_team_title {
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--text-color);
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.com_team_text {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-color);
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+/* 4 ta ustunlik rasmlar gridi */
+.com_team_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+}
+
+.com_team_member {
+  position: relative;
+  width: 100%;
+  height: 320px; /* Rasmlarning balandligi */
+  overflow: hidden;
+}
+
+.com_team_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Rasmni ustidagi shaffof quti (Hover uchun) */
+.com_team_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(35, 37, 54, 0.85); /* Qoramtir shaffof fon */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px;
+  opacity: 0; /* Boshida ko'rinmaydi */
+  transition: opacity 0.4s ease;
+}
+
+/* Rasmga hover bo'lganda overlay chiqadi */
+.com_team_member:hover .com_team_overlay {
+  opacity: 1;
+}
+
+.com_team_name {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.com_team_role {
+  color: #ffffff;
+  font-size: 14px;
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+
+/* Ijtimoiy tarmoq ikonkalari */
+.com_team_socials {
+  display: flex;
+  gap: 15px;
+}
+
+.com_team_socials a {
+  color: #ffffff;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+/* Ikonkalarga hover effekti */
+.com_team_socials a:hover {
+  color: var(--main-color);
+}
+
+/* Eng pastdagi rangli chiziq */
+.com_team_bottom_line {
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(to right, #ff9d00, #ffd05b, var(--main-color));
+}
+
+/* ===================================================
+   RESPONSIV (CompanyTeamwork)
+   =================================================== */
+@media (max-width: 1024px) {
+  .com_team_grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .com_team_content {
+    width: 100%;
+  }
+  .com_team_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .com_team_title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .com_team_grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .com_team_title {
+    font-size: 26px;
+  }
+}
