@@ -49,7 +49,7 @@
 
 @media (max-width: 800px) {
     .ser_consulting .container {
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 40px;
     }
 
