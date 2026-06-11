@@ -49,7 +49,7 @@
 
 @media (max-width: 800px) {
     .ser_development .container {
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 40px;
     }
 
