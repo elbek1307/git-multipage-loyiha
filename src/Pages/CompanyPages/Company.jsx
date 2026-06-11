@@ -4,6 +4,7 @@ import { CompanyHero } from '../../Components/CompanyHero/CompanyHero'
 import { CompanyOurstory } from '../../Components/CompanyOurstory/CompanyOurstory'
 import OurExpertise from '../../Components/OurExpertise/OurExpertise'
 import { CompanyVision } from '../../Components/CompanyVision/CompanyVision'
+import { CompanyTeamwork } from '../../Components/CompanyTeamwork/CompanyTeamwork'
 
 
 
@@ -14,6 +15,7 @@ const Company = () => {
      <CompanyOurstory />
      <OurExpertise />
      <CompanyVision />
+     <CompanyTeamwork />
     </>
   )
 }

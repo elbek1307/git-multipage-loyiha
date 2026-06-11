@@ -4,6 +4,7 @@
   background-color: #ffffff;
 }
 
+/* Matn qismi */
 .com_team_content {
   width: 60%;
   margin-bottom: 50px;
@@ -35,7 +36,7 @@
   line-height: 1.6;
 }
 
-/* 4 ta ustunlik rasmlar gridi */
+/* Jamoa rasmlari paneli (Container ichida turishi kerak) */
 .com_team_grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -45,33 +46,33 @@
 .com_team_member {
   position: relative;
   width: 100%;
-  height: 320px; /* Rasmlarning balandligi */
+  height: 320px;
   overflow: hidden;
 }
 
 .com_team_img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* Rasm qutiga moslashadi, cho'zilib ketmaydi */
+  display: block; /* Rasm tagidagi bo'sh joyni yo'qotadi */
 }
 
-/* Rasmni ustidagi shaffof quti (Hover uchun) */
+/* Hover qutisi */
 .com_team_overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(35, 37, 54, 0.85); /* Qoramtir shaffof fon */
+  background-color: rgba(35, 37, 54, 0.85); /* Shaffof qora rang */
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   padding: 30px;
-  opacity: 0; /* Boshida ko'rinmaydi */
+  opacity: 0;
   transition: opacity 0.4s ease;
 }
 
-/* Rasmga hover bo'lganda overlay chiqadi */
 .com_team_member:hover .com_team_overlay {
   opacity: 1;
 }
@@ -90,7 +91,7 @@
   margin-bottom: 20px;
 }
 
-/* Ijtimoiy tarmoq ikonkalari */
+/* Ijtimoiy tarmoqlar */
 .com_team_socials {
   display: flex;
   gap: 15px;
@@ -102,7 +103,6 @@
   transition: color 0.3s ease;
 }
 
-/* Ikonkalarga hover effekti */
 .com_team_socials a:hover {
   color: var(--main-color);
 }
