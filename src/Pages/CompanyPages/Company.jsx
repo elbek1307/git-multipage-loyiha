@@ -3,6 +3,7 @@ import "./Company.css"
 import { CompanyHero } from '../../Components/CompanyHero/CompanyHero'
 import { CompanyOurstory } from '../../Components/CompanyOurstory/CompanyOurstory'
 import OurExpertise from '../../Components/OurExpertise/OurExpertise'
+import { CompanyVision } from '../../Components/CompanyVision/CompanyVision'
 
 
 
@@ -12,6 +13,7 @@ const Company = () => {
      <CompanyHero />
      <CompanyOurstory />
      <OurExpertise />
+     <CompanyVision />
     </>
   )
 }
