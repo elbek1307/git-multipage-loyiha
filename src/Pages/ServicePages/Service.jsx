@@ -4,6 +4,8 @@ import ServiceOurservices from '../../Components/ServiceOurservices/ServiceOurse
 import OurProcess from '../../Components/OurProcess/OurProcess';
 import { ServiceTechnical } from '../../Components/ServiceTechnical/ServiceTechnical';
 import { ServiceDevelopment } from '../../Components/ServiceDevelopment/ServiceDevelopment';
+import { ServiceAws } from '../../Components/ServiceAws/ServiceAws';
+
 
 const Service = () => {
   return (
@@ -12,6 +14,7 @@ const Service = () => {
     <OurProcess />
     <ServiceTechnical />
     <ServiceDevelopment />
+    <ServiceAws />
     </>
   );
 };
