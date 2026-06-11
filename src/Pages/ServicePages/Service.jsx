@@ -6,6 +6,7 @@ import { ServiceTechnical } from '../../Components/ServiceTechnical/ServiceTechn
 import { ServiceDevelopment } from '../../Components/ServiceDevelopment/ServiceDevelopment';
 import { ServiceAws } from '../../Components/ServiceAws/ServiceAws';
 import { ServiceConsulting } from '../../Components/ServiceConsulting/ServiceConsulting';
+import { ServiceIt } from '../../Components/ServiceIt/ServiceIt';
 
 
 const Service = () => {
@@ -17,6 +18,7 @@ const Service = () => {
     <ServiceDevelopment />
     <ServiceAws />
     <ServiceConsulting />
+    <ServiceIt />
     </>
   );
 };
