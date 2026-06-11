@@ -109,16 +109,9 @@
   color: var(--main-color);
 }
 
-/* Rasmlar tegidan o'tadigan rangli dekorativ chiziq */
-.com_team_bottom_line {
-  width: 100%;
-  height: 8px;
-  background: linear-gradient(to right, #ff9d00, #ffd05b, var(--main-color));
-}
 
-/* ===================================================
-   RESPONSIV (CompanyTeamwork)
-   =================================================== */
+
+
 @media (max-width: 1024px) {
   .com_team_grid {
     grid-template-columns: repeat(3, 1fr);
