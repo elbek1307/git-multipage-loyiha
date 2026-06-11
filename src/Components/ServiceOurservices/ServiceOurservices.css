@@ -24,7 +24,7 @@
   opacity: 0.6;
   display: block;
   letter-spacing: 1px;
-  color: var(--subtitle-color);
+  color: var(--subtitle--);
 }
 
 .ser_ourservice_title {
@@ -44,7 +44,7 @@
 
 /* Tugma va hover */
 .ser_ourservice_btn {
-  background-color: #444cfc;
+  background-color: var(--main-color);
   color: #ffffff;
   border: none;
   padding: 18px 36px;
