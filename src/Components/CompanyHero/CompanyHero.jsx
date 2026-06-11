@@ -10,14 +10,14 @@ export const CompanyHero = () => {
     <section className="com_hero">
       <div className="container">
         
-        {/* Sarlavha va matn qismi */}
+      
         <div className="com_hero_content">
           <span className="com_hero_subtitle">COMPANY</span>
           <h1 className="com_hero_title">Award-winning Company seen and used by millions around the world.</h1>
           <p className="com_hero_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The Maker is a decentralized.</p>
         </div>
 
-        {/* 3 ta rasm yonma-yon qismi */}
+       
         <div className="com_hero_images">
           <img src={heroImg1} alt="Meeting 1" className="com_hero_img" />
           <img src={heroImg2} alt="Meeting 2" className="com_hero_img" />
