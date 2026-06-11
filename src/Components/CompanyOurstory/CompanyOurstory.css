@@ -1,0 +1,172 @@
+.com_story {
+  width: 100%;
+  padding: 100px 0 0 0; /* Pastki padding logotiplar paneliga beriladi */
+  background-color: #ffffff;
+}
+
+.com_story .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Chap tomon - Matnlar */
+.com_story_left {
+  width: 48%;
+  position: relative;
+}
+
+/* Matn tepasidagi ko'k kichik kvadrat */
+.com_story_left::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  background-color: #444cfc;
+}
+
+.com_story_subtitle {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #444cfc;
+  margin-bottom: 15px;
+}
+
+.com_story_title {
+  font-size: 38px;
+  font-weight: 700;
+  color: #1b1c2b;
+  line-height: 1.3;
+  margin-bottom: 25px;
+}
+
+.com_story_text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #5c5e71;
+  line-height: 1.6;
+}
+
+
+.com_story_right {
+  width: 45%;
+}
+
+.com_story_stats_box {
+  background-color: #ffe6d2; 
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 20px; 
+}
+
+.com_story_stat_item {
+  width: 45%; 
+}
+
+.com_story_stat_num {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1b1c2b;
+  margin-bottom: 5px;
+  position: relative;
+  display: inline-block;
+}
+
+/* Raqamlar tagidagi kichik rangli chiziqcha */
+.com_story_stat_num::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 30px;
+  height: 4px;
+  background-color: #444cfc;
+}
+
+
+.com_story_stat_item:nth-child(2) .com_story_stat_num::after { background-color: #ff9d00; }
+.com_story_stat_item:nth-child(3) .com_story_stat_num::after { background-color: #ff9d00; }
+.com_story_stat_item:nth-child(4) .com_story_stat_num::after { background-color: #ffd05b; }
+
+.com_story_stat_name {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1b1c2b;
+  opacity: 0.8;
+  margin-top: 10px;
+}
+
+
+.com_story_logos_container {
+  width: 100%;
+  background-color: #fbfbfb;
+  padding: 50px 0;
+  margin-top: 80px;
+  border-top: 1px solid #eaeaea;
+}
+
+.com_story_logos_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.com_story_logo_item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #1b1c2b;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+
+.com_story_logo_item:hover {
+  opacity: 1;
+}
+
+.com_story_logo_item svg {
+  font-size: 28px;
+}
+
+
+
+@media (max-width: 900px) {
+  .com_story .container {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .com_story_left, .com_story_right {
+    width: 100%;
+  }
+
+  .com_story_logos_wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .com_story_title {
+    font-size: 30px;
+  }
+
+  .com_story_stats_box {
+    padding: 30px 20px;
+  }
+
+  .com_story_stat_item {
+    width: 100%; 
+  }
+}
