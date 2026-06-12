@@ -2,7 +2,7 @@ import React from 'react';
 import './CareerHero.css';
 import { MdArrowForward } from 'react-icons/md';
 
-// import carHeroBg from '../../assets/career_hero_bg.png'; 
+import carHeroBg from '../../assets/career_hero_bg.svg'; 
 
 const CareerHero = () => {
   return (
@@ -23,9 +23,7 @@ const CareerHero = () => {
 
       
         <div className="car_hero_right">
-        
-          <div className="car_hero_img_placeholder">Image Area</div>
-          {/* <img src={carHeroBg} alt="Career Hero" className="car_hero_img" /> */}
+          <img src={carHeroBg} alt="Career Hero" className="car_hero_img" />
         </div>
 
       </div>
