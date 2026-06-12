@@ -1,0 +1,128 @@
+.car_hero {
+  padding: 100px 0;
+  background-color: #ffffff;
+  color: var(--text-color);
+}
+
+.car_hero .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.car_hero_left {
+  width: 50%;
+}
+
+.car_hero_subtitle {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--subtitle-color);
+  opacity: 0.7;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.car_hero_title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+.car_hero_desc {
+  font-size: 16px;
+  line-height: 1.6;
+  opacity: 0.8;
+  margin-bottom: 40px;
+}
+
+
+.car_hero_btn {
+  background-color: var(--main-color);
+  color: #fff;
+  border: none;
+  padding: 18px 36px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+
+.car_hero_btn::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(135deg, #ff9d00 50%, #ffd05b 50%);
+  z-index: 1;
+}
+
+.car_hero_btn:hover {
+  background-color: #3139da; 
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(68, 76, 252, 0.2);
+}
+
+.car_hero_btn_icon {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.car_hero_btn:hover .car_hero_btn_icon {
+  transform: translateX(5px);
+}
+
+/* O'ng ustun - Rasm joyi */
+.car_hero_right {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.car_hero_img_placeholder {
+  width: 100%;
+  height: 400px;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-weight: 600;
+}
+
+.car_hero_img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+@media (max-width: 992px) {
+  .car_hero_title { font-size: 38px; }
+  .car_hero_img_placeholder { height: 300px; }
+}
+
+@media (max-width: 768px) {
+  .car_hero { padding: 60px 0; }
+  .car_hero .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+  .car_hero_left, .car_hero_right {
+    width: 100%;
+  }
+  .car_hero_title { font-size: 32px; }
+  .car_hero_img_placeholder { height: 250px; }
+}
