@@ -1,63 +1,54 @@
-import React from 'react';
+import React from 'react'
 import './OurExpertise.css';
-// React Icons'dan mos keladigan ikonkalarni import qilamiz
 import { MdRocketLaunch, MdWorkspacePremium, MdHeadsetMic } from 'react-icons/md'; 
 
-const OurExpertise = () => {
+export const OurExpertise = () => {
   return (
-    <section className="our_expertise">
+    <>
+    <section className="expertise">
       <div className="container">
         
-        {/* Chap tomondagi matn */}
-        <div className="expertise_content">
-          <span className="section_subtitle">OUR EXPERTISE</span>
-          <h2 className="section_title">
+        {/* Chap tomon - Matnlar qismi */}
+        <div className="expertise_left">
+          <span className="expertise_subtitle">OUR EXPERTISE</span>
+          <h2 className="expertise_title">
             We want to get local identification in every corner of the world in this era of global citizenship
           </h2>
-          <p className="section_desc">
+          <p className="expertise_text">
             Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded.
           </p>
         </div>
 
-        {/* O'ng tomondagi kartochkalar */}
-        <div className="expertise_cards">
+        {/* O'ng tomon - Kartochkalar qismi */}
+        <div className="expertise_right">
           
-          {/* Card 1 */}
-          <div className="expertise_card_item">
-            <div className="card_icon_box">
-              <MdRocketLaunch className="card_icon" />
+          <div className="expertise_card">
+            <div className="expertise_card_icon">
+              <MdRocketLaunch />
             </div>
-            <div className="card_text_box">
-              <h4 className="card_title">On Time Delivery</h4>
-              <p className="card_desc">
-                Through True Rich Attended does no end it his mother since real had half every him.
-              </p>
+            <div className="expertise_card_content">
+              <h4 className="expertise_card_title">On Time Delivery</h4>
+              <p className="expertise_card_text">Through True Rich Attended does no end it his mother since real had half every him.</p>
             </div>
           </div>
 
-          {/* Card 2 */}
-          <div className="expertise_card_item">
-            <div className="card_icon_box">
-              <MdWorkspacePremium className="card_icon" />
+          <div className="expertise_card">
+            <div className="expertise_card_icon">
+              <MdWorkspacePremium />
             </div>
-            <div className="card_text_box">
-              <h4 className="card_title">Best Quality</h4>
-              <p className="card_desc">
-                Through True Rich Attended does no end it his mother since real had half every him.
-              </p>
+            <div className="expertise_card_content">
+              <h4 className="expertise_card_title">Best Quality</h4>
+              <p className="expertise_card_text">Through True Rich Attended does no end it his mother since real had half every him.</p>
             </div>
           </div>
 
-        
-          <div className="expertise_card_item">
-            <div className="card_icon_box">
-              <MdHeadsetMic className="card_icon" />
+          <div className="expertise_card">
+            <div className="expertise_card_icon">
+              <MdHeadsetMic />
             </div>
-            <div className="card_text_box">
-              <h4 className="card_title">Support Assist</h4>
-              <p className="card_desc">
-                Through True Rich Attended does no end it his mother since real had half every him.
-              </p>
+            <div className="expertise_card_content">
+              <h4 className="expertise_card_title">Support Assist</h4>
+              <p className="expertise_card_text">Through True Rich Attended does no end it his mother since real had half every him.</p>
             </div>
           </div>
 
@@ -65,7 +56,6 @@ const OurExpertise = () => {
 
       </div>
     </section>
+    </>
   );
 };
-
-export default OurExpertise;
