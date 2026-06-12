@@ -24,7 +24,7 @@ export default function Navbar() {
             <li className="nav_item"><Link to="home">Home</Link></li>
             <li className="nav_item"><Link to="service">Service</Link></li>
             <li className="nav_item"><Link to="company">Company</Link></li>
-            <li className="nav_item"><a href="#">Career</a></li>
+            <li className="nav_item"><Link to="career">Career</Link></li>
             <li className="nav_item"><a href="#">Blog</a></li>
             <li className="nav_item"><a href="#">Contact us</a></li>
             <li className="nav_item"><a href="#">Clone project &rarr;</a></li>

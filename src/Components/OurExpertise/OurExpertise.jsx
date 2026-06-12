@@ -2,7 +2,7 @@ import React from 'react'
 import './OurExpertise.css';
 import { MdRocketLaunch, MdWorkspacePremium, MdHeadsetMic } from 'react-icons/md'; 
 
-export const OurExpertise = () => {
+const OurExpertise = () =>{
   return (
     <>
     <section className="expertise">
@@ -59,3 +59,6 @@ export const OurExpertise = () => {
     </>
   );
 };
+
+
+export default OurExpertise;

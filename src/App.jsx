@@ -7,6 +7,7 @@ import { Layout } from './Components/layout/layout';
 import Home from './Pages/HomePages/Home';
 import Service from './Pages/ServicePages/Service'; 
 import Company from './Pages/CompanyPages/Company';
+import Career from './Pages/CareerPages/Career';
 
 
 const App = () => {
@@ -19,7 +20,8 @@ const App = () => {
             <Route path='home' index element={<Home />} /> 
             <Route path="service" element={<Service />} />
             <Route path="company" element={<Company />} />
-  
+            <Route path="career" element={<Career />} />
+        
           </Route>
 
         </Routes>
