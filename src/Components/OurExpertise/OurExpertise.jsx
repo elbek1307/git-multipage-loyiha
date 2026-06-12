@@ -8,7 +8,7 @@ export const OurExpertise = () => {
     <section className="expertise">
       <div className="container">
         
-        {/* Chap tomon - Matnlar qismi */}
+       
         <div className="expertise_left">
           <span className="expertise_subtitle">OUR EXPERTISE</span>
           <h2 className="expertise_title">
@@ -19,7 +19,7 @@ export const OurExpertise = () => {
           </p>
         </div>
 
-        {/* O'ng tomon - Kartochkalar qismi */}
+
         <div className="expertise_right">
           
           <div className="expertise_card">
